@@ -320,3 +320,92 @@ setTimeout(()=>{
     escribirCarta();
 
 },10000);
+// =============================
+// CONTADOR DESDE 16 MAYO 2022
+// =============================
+
+
+function actualizarContador(){
+
+
+    const inicio =
+    new Date("2022-05-16T00:00:00");
+
+
+    const ahora =
+    new Date();
+
+
+
+    let diferencia =
+    ahora - inicio;
+
+
+
+    const segundos =
+    Math.floor(diferencia / 1000);
+
+
+    const minutos =
+    Math.floor(segundos / 60);
+
+
+    const horas =
+    Math.floor(minutos / 60);
+
+
+    const dias =
+    Math.floor(horas / 24);
+
+
+
+    const years =
+    Math.floor(dias / 365);
+
+
+
+    const months =
+    Math.floor((dias % 365) / 30);
+
+
+
+    const days =
+    (dias % 365) % 30;
+
+
+
+    document.getElementById("years").innerHTML =
+    years;
+
+
+    document.getElementById("months").innerHTML =
+    months;
+
+
+    document.getElementById("days").innerHTML =
+    days;
+
+
+    document.getElementById("hours").innerHTML =
+    horas % 24;
+
+
+    document.getElementById("minutes").innerHTML =
+    minutos % 60;
+
+
+    document.getElementById("seconds").innerHTML =
+    segundos % 60;
+
+
+}
+
+
+
+actualizarContador();
+
+
+setInterval(
+actualizarContador,
+1000
+);
