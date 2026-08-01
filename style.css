@@ -509,3 +509,113 @@ h1 {
 
 
 }
+/* ==========================
+   GALERÍA GALÁCTICA
+========================== */
+
+
+.gallery-section {
+
+    min-height:100vh;
+
+    padding:80px 20px;
+
+    text-align:center;
+
+}
+
+
+
+.gallery-section h2 {
+
+
+    font-size:40px;
+
+    margin-bottom:40px;
+
+
+    color:#ffd6ff;
+
+
+}
+
+
+
+.gallery {
+
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:25px;
+
+
+}
+
+
+
+.photo {
+
+
+    width:220px;
+
+    height:280px;
+
+
+    object-fit:cover;
+
+
+    border-radius:20px;
+
+
+    box-shadow:
+
+    0 0 25px #d77cff;
+
+
+    animation:
+
+    floatPhoto 5s infinite;
+
+
+}
+
+
+
+@keyframes floatPhoto {
+
+
+    0%,100%{
+
+        transform:
+        translateY(0);
+
+    }
+
+
+    50%{
+
+        transform:
+        translateY(-20px);
+
+    }
+
+
+}
+
+
+
+@media(max-width:600px){
+
+    .photo{
+
+        width:160px;
+
+        height:220px;
+
+    }
+
+}
