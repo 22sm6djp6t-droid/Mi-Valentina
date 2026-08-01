@@ -434,3 +434,78 @@ h1 {
     }
 
 }
+/* ================================
+   CORAZÓN DE PARTÍCULAS
+   MI VALENTINA ❤️
+================================ */
+
+
+.particle-heart {
+
+    position:relative;
+
+    width:260px;
+
+    height:230px;
+
+    margin:auto;
+
+}
+
+
+
+.particle {
+
+
+    position:absolute;
+
+    width:7px;
+
+    height:7px;
+
+
+    background:#ff7de9;
+
+    border-radius:50%;
+
+
+    box-shadow:
+
+    0 0 10px #ff7de9,
+
+    0 0 20px #ffffff;
+
+
+    animation:
+
+    particleGlow 2s infinite alternate;
+
+
+}
+
+
+
+@keyframes particleGlow{
+
+
+    from{
+
+        opacity:.4;
+
+        transform:
+        scale(.8);
+
+    }
+
+
+    to{
+
+        opacity:1;
+
+        transform:
+        scale(1.4);
+
+    }
+
+
+}
