@@ -617,5 +617,114 @@ h1 {
         height:220px;
 
     }
+/* ============================
+   CARTA MI VALENTINA
+============================ */
 
+
+.letter-section {
+
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:30px;
+
+
+}
+
+
+
+.letter {
+
+
+    max-width:700px;
+
+
+    background:
+
+    rgba(255,255,255,.08);
+
+
+    backdrop-filter:blur(15px);
+
+
+    border-radius:25px;
+
+
+    padding:40px;
+
+
+    border:
+
+    1px solid rgba(255,255,255,.2);
+
+
+    box-shadow:
+
+    0 0 40px rgba(220,120,255,.4);
+
+
+}
+
+
+
+.letter h2 {
+
+
+    text-align:center;
+
+
+    font-size:40px;
+
+
+    margin-bottom:30px;
+
+
+    color:#ffd6ff;
+
+
+}
+
+
+
+.letter p {
+
+
+    font-size:22px;
+
+
+    line-height:1.8;
+
+
+    color:white;
+
+
+}
+
+
+
+@media(max-width:600px){
+
+
+    .letter h2{
+
+        font-size:30px;
+
+    }
+
+
+    .letter p{
+
+        font-size:18px;
+
+    }
+
+
+}
 }
