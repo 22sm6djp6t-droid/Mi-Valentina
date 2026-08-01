@@ -132,3 +132,70 @@ setInterval(
 actualizarTiempo,
 60000
 );
+// =================================
+// CREACIÓN DEL CORAZÓN DE PARTÍCULAS
+// =================================
+
+
+const heartContainer =
+document.getElementById(
+"particleHeart"
+);
+
+
+
+for(let i=0;i<180;i++){
+
+
+    let particle =
+    document.createElement("span");
+
+
+    particle.className =
+    "particle";
+
+
+
+    let t =
+    Math.PI * 2 *
+    (i/180);
+
+
+
+    let x =
+    16 *
+    Math.pow(Math.sin(t),3);
+
+
+
+    let y =
+    -(13*Math.cos(t)
+    -5*Math.cos(2*t)
+    -2*Math.cos(3*t)
+    -Math.cos(4*t));
+
+
+
+    particle.style.left =
+    (130+x*7)
+    +"px";
+
+
+    particle.style.top =
+    (110+y*7)
+    +"px";
+
+
+
+    particle.style.animationDelay =
+    Math.random()*2
+    +"s";
+
+
+
+    heartContainer.appendChild(
+    particle
+    );
+
+
+}
