@@ -1,0 +1,291 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+
+    background:
+    radial-gradient(circle at center,
+    #35105f 0%,
+    #12001f 40%,
+    #020008 100%);
+
+    font-family: 'Georgia', serif;
+    color: white;
+
+}
+
+
+/* Fondo de estrellas */
+
+.stars {
+
+    position: fixed;
+    width: 100%;
+    height: 100%;
+
+    background-image:
+
+    radial-gradient(circle, white 1px, transparent 1px),
+    radial-gradient(circle, #d9b3ff 1px, transparent 1px);
+
+    background-size:
+    80px 80px,
+    120px 120px;
+
+    animation: moveStars 20s linear infinite;
+
+    opacity: .7;
+
+}
+
+
+@keyframes moveStars {
+
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-200px);
+    }
+
+}
+
+
+
+/* Textos iniciales */
+
+.intro {
+
+    position: absolute;
+
+    top: 40%;
+    width: 100%;
+
+    text-align: center;
+
+    padding: 20px;
+
+}
+
+
+
+.intro p {
+
+    font-size: 25px;
+
+    opacity: 0;
+
+    animation:
+    fadeText 4s forwards;
+
+}
+
+
+
+#text2 {
+
+    animation-delay: 4s;
+
+}
+
+
+
+@keyframes fadeText {
+
+    0% {
+
+        opacity:0;
+
+        transform:
+        translateY(30px);
+
+    }
+
+
+    100% {
+
+        opacity:1;
+
+        transform:
+        translateY(0);
+
+    }
+
+}
+
+
+
+/* Corazón */
+
+
+.heart-section {
+
+    height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+
+}
+
+
+
+.heart {
+
+    font-size:120px;
+
+    filter:
+
+    drop-shadow(0 0 30px #ff4dff);
+
+
+    animation:
+
+    heartbeat 1.8s infinite;
+
+}
+
+
+
+@keyframes heartbeat {
+
+
+    0% {
+
+        transform:scale(1);
+
+    }
+
+
+    50% {
+
+        transform:scale(1.15);
+
+    }
+
+
+    100% {
+
+        transform:scale(1);
+
+    }
+
+
+}
+
+
+
+h1 {
+
+
+    margin-top:30px;
+
+    font-size:55px;
+
+    text-align:center;
+
+
+    background:
+
+    linear-gradient(
+    90deg,
+    #ffb7ff,
+    #ffffff,
+    #d58cff
+    );
+
+
+    -webkit-background-clip:text;
+
+    color:transparent;
+
+
+    animation:
+
+    glow 3s infinite;
+
+
+}
+
+
+
+@keyframes glow {
+
+
+    0%,100% {
+
+        filter:
+        drop-shadow(
+        0 0 10px #ff55ff
+        );
+
+    }
+
+
+    50% {
+
+        filter:
+        drop-shadow(
+        0 0 35px #ffffff
+        );
+
+    }
+
+
+}
+
+
+
+.date {
+
+    margin-top:20px;
+
+    font-size:20px;
+
+    color:#e8d8ff;
+
+}
+
+
+
+/* Adaptación celular */
+
+@media(max-width:600px){
+
+
+    .intro p {
+
+        font-size:20px;
+
+    }
+
+
+    h1 {
+
+        font-size:42px;
+
+    }
+
+
+    .heart {
+
+        font-size:90px;
+
+    }
+
+
+}
