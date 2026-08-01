@@ -728,3 +728,131 @@ h1 {
 
 }
 }
+/* ============================
+   CONTADOR DEL AMOR
+============================ */
+
+
+.time-section {
+
+
+    min-height:80vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+}
+
+
+
+.time-section h2 {
+
+
+    font-size:40px;
+
+    color:#ffd6ff;
+
+    margin-bottom:40px;
+
+
+}
+
+
+
+.counter {
+
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:20px;
+
+
+}
+
+
+
+.counter div {
+
+
+    width:120px;
+
+    padding:20px;
+
+
+    background:
+
+    rgba(255,255,255,.08);
+
+
+    border-radius:20px;
+
+
+    backdrop-filter:blur(10px);
+
+
+    box-shadow:
+
+    0 0 20px rgba(220,120,255,.5);
+
+
+}
+
+
+
+.counter span {
+
+
+    display:block;
+
+
+    font-size:40px;
+
+
+    color:white;
+
+
+}
+
+
+
+.counter small {
+
+
+    color:#eacbff;
+
+    font-size:16px;
+
+
+}
+
+
+
+@media(max-width:600px){
+
+
+.counter div{
+
+    width:95px;
+
+}
+
+
+.counter span{
+
+    font-size:30px;
+
+}
+
+
+}
