@@ -289,3 +289,148 @@ h1 {
 
 
 }
+/* =================================
+
+   EFECTOS GALAXIA AVANZADA
+
+   MI VALENTINA 🌌
+
+================================= */
+
+.star {
+
+    position:absolute;
+
+    background:white;
+
+    border-radius:50%;
+
+    box-shadow:
+
+    0 0 8px white,
+
+    0 0 15px #d98cff;
+
+}
+
+@keyframes twinkle {
+
+    0%,100%{
+
+        transform:
+
+        scale(1);
+
+        opacity:.4;
+
+    }
+
+    50%{
+
+        transform:
+
+        scale(2);
+
+        opacity:1;
+
+    }
+
+}
+
+/* Aura del corazón */
+
+.heart {
+
+    position:relative;
+
+}
+
+.heart::before {
+
+    content:"";
+
+    position:absolute;
+
+    inset:-35px;
+
+    background:
+
+    radial-gradient(
+
+    circle,
+
+    rgba(255,80,220,.5),
+
+    transparent 70%
+
+    );
+
+    filter:blur(25px);
+
+    animation:
+
+    pulseAura 2s infinite;
+
+}
+
+@keyframes pulseAura{
+
+    0%,100%{
+
+        transform:scale(.9);
+
+        opacity:.5;
+
+    }
+
+    50%{
+
+        transform:scale(1.2);
+
+        opacity:1;
+
+    }
+
+}
+
+/* Movimiento suave del título */
+
+h1 {
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.heart-section {
+
+    animation:
+
+    appearUniverse 3s ease;
+
+}
+
+@keyframes appearUniverse {
+
+    from{
+
+        opacity:0;
+
+        transform:
+
+        scale(.8);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:
+
+        scale(1);
+
+    }
+
+}
