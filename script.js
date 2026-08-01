@@ -244,3 +244,79 @@ fotos.forEach((foto)=>{
 
 
 });
+// =============================
+// CARTA ESCRITA AUTOMÁTICAMENTE
+// =============================
+
+
+const carta = `
+
+Mi Valentina ❤️
+
+
+Desde aquel 16 de mayo de 2022
+comenzó una historia que cambió mi vida.
+
+
+Gracias por cada sonrisa,
+cada momento y cada recuerdo.
+
+
+Quiero que sepas que entre millones
+de estrellas en este universo,
+siempre elegiría encontrarte a ti.
+
+
+Adoro tus patitas ❤️
+
+
+Y así será por toda la eternidad.
+
+
+Te amo.
+
+
+`;
+
+
+
+const letterBox =
+document.getElementById("letterText");
+
+
+
+let posicion = 0;
+
+
+
+function escribirCarta(){
+
+
+    if(posicion < carta.length){
+
+
+        letterBox.innerHTML +=
+        carta.charAt(posicion);
+
+
+        posicion++;
+
+
+        setTimeout(
+        escribirCarta,
+        50
+        );
+
+
+    }
+
+
+}
+
+
+
+setTimeout(()=>{
+
+    escribirCarta();
+
+},10000);
