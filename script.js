@@ -199,3 +199,48 @@ for(let i=0;i<180;i++){
 
 
 }
+// =============================
+// GALERÍA DE RECUERDOS
+// =============================
+
+
+const gallery =
+document.getElementById("gallery");
+
+
+
+const fotos = [
+
+"foto1.jpg",
+
+"foto2.jpg",
+
+"foto3.jpg",
+
+"foto4.jpg",
+
+"foto5.jpg"
+
+];
+
+
+
+fotos.forEach((foto)=>{
+
+
+    let img =
+    document.createElement("img");
+
+
+    img.src =
+    "assets/fotos/" + foto;
+
+
+    img.className =
+    "photo";
+
+
+    gallery.appendChild(img);
+
+
+});
